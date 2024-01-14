@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #kirimBtn {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="inputForm" onclick="showButton()" placeholder="Klik disini..." />
+            <button type="submit" id="kirimBtn">Kirim</button>
+        </form>
+
+        <script>
+            function showButton() {
+                var kirimBtn = document.getElementById("kirimBtn");
+                kirimBtn.style.display = "block";
+            }
+
+            document.addEventListener("click", function (event) {
+                var inputForm = document.getElementById("inputForm");
+                var kirimBtn = document.getElementById("kirimBtn");
+
+                if (event.target !== inputForm && event.target !== kirimBtn) {
+                    kirimBtn.style.display = "none";
+                }
+            });
+        </script>
+    </body>
+</html>

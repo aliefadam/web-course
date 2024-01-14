@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Course Pemahaman Teori - Pelajar</title>
+        <link rel="stylesheet" href="css/hasil-evaluasi-pemahaman-teori.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+    </head>
+    <body>
+        <div class="bg-konfirmasi" style="display: none">
+            <div class="box">
+                <p>Anda yakin ingin mengumpulkan hasil evaluasi ini ?</p>
+                <div class="tombol">
+                    <a onclick="daftar()" class="daftar btn">Ya</a>
+                    <a onclick="tutup()" class="batal btn">Tidak</a>
+                </div>
+            </div>
+        </div>
+        <!-- navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="imgs/image 2.png" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item gambar">
+                            <img src="imgs/home.png" alt="" />
+                            <a class="nav-link" href="dashboard-pelajar.html">BERANDA</a>
+                        </li>
+                        <li class="nav-item dropdown gambar warna">
+                            <img src="imgs/book.png" alt="" />
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">COURSE</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="course-pemahaman-teori-pelajar.html">Pengetahuan Komponen</a></li>
+                                <li><a class="dropdown-item" href="course-pemahaman-teori-pelajar.html">Pengetahuan Teori</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item gambar">
+                            <img src="imgs/messages.png" alt="" />
+                            <a class="nav-link" href="qna.html">Q & A</a>
+                        </li>
+                        <li class="nav-item gambar">
+                            <img src="imgs/task-square.png" alt="" />
+                            <a href="quiz.html" class="nav-link">KUIS</a>
+                        </li>
+                        <li class="nav-item">
+                            <div>
+                                <img src="imgs/Ellipse 14.png" alt="" />
+                            </div>
+                            <div>
+                                <span>Kaitlin Gregory</span>
+                                <span>Pelajar</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- akhir navbar -->
+
+        <div class="container kotak">
+            <div class="kiri">
+                <div class="atas">
+                    <div class="logo-back">
+                        <a href="detail-topik-pemahaman-enroll-ok.html" class="btn kembali">
+                            <img src="imgs/arrow-left.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="title">
+                        <span>Evaluasi Pemahaman Teori Rangkaian Elektrik</span>
+                    </div>
+                </div>
+                <div class="bawah">
+                    <img src="imgs/Frame 4696.png" alt="" />
+                    <a href="review-evaluasi.html" class="btn evaluasi">Lihat Hasil Evaluasi</a>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            footer {
+                margin-top: 20px;
+                background-color: #3464a0;
+                color: white;
+                height: fit-content;
+                padding: 20px;
+                font-family: "Poppins-SemiBold";
+            }
+
+            footer span {
+                margin-left: 50px;
+                font-size: 13px;
+            }
+
+            footer img {
+                width: 100px;
+            }
+        </style>
+
+        <footer>
+            <div class="container">
+                <img src="imgs/image 3.png" alt="" />
+                <span>&copy; 2023 NINO Limited</span>
+            </div>
+        </footer>
+
+        <script src="js/loadHtml.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tambah Kuis - Instruktur</title>
+        <link rel="stylesheet" href="css/tambah-kuis.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+    </head>
+    <body>
+        <div class="bg-konfirmasi" style="display: none">
+            <div class="box">
+                <p>Anda yakin ingin mengupload kuis ini ?</p>
+                <div class="tombol">
+                    <a onclick="daftar()" class="daftar btn">Ya</a>
+                    <a onclick="tutup()" class="batal btn">Tidak</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="imgs/image 2.png" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item gambar">
+                            <img src="imgs/home.png" alt="" />
+                            <a class="nav-link" href="dashboard-instruktur.html">BERANDA</a>
+                        </li>
+                        <li class="nav-item dropdown gambar">
+                            <img src="imgs/book.png" alt="" />
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">COURSE</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="pengetahuan-kompononen-instuktur.html">Pengetahuan Komponen</a></li>
+                                <li><a class="dropdown-item" href="daftar-materi-pemahaman-instruktur.html">Pengetahuan Teori</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item gambar">
+                            <img src="imgs/messages.png" alt="qna" />
+                            <a class="nav-link" href="#">Q & A</a>
+                        </li>
+                        <li class="nav-item gambar warna">
+                            <img src="imgs/task-square.png" alt="" />
+                            <a href="quis-instruktur.html" class="nav-link">KUIS</a>
+                        </li>
+                        <li class="nav-item">
+                            <div>
+                                <img src="imgs/Ellipse 21.png" alt="" />
+                            </div>
+                            <div>
+                                <span>John Doe</span>
+                                <span>Instuktur</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- akhir navbar -->
+
+        <div class="container kotak">
+            <header>
+                <div class="tombol-back">
+                    <a href="quis-instruktur.html">
+                        <img src="imgs/arrow-left.png" alt="" />
+                    </a>
+                </div>
+                <div class="title">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Kuis Dasar Teknik Elektro" />
+                    </form>
+                </div>
+            </header>
+
+            <div class="box">
+                <div class="bg-form">
+                    <div class="form">
+                        <div class="soal">
+                            <form action="">
+                                <input class="pertanyaan" type="text" placeholder="Pertanyaan" />
+                            </form>
+                            <div class="poin">
+                                <input class="poin" type="text" placeholder="0" />
+                                <span>Poin</span>
+                            </div>
+                        </div>
+                        <div class="jawaban">
+                            <form action="">
+                                <div>
+                                    <input type="radio" name="soal1" id="jawaban1" />
+                                    <input type="text" name="" id="" placeholder="Unsur" />
+                                </div>
+                                <div>
+                                    <input type="radio" name="soal1" id="jawaban2" />
+                                    <input type="text" name="" id="" placeholder="Molekul" />
+                                </div>
+                                <div>
+                                    <input type="radio" name="soal1" id="jawaban3" />
+                                    <input type="text" name="" id="" placeholder="Sel" />
+                                </div>
+                                <div>
+                                    <input type="radio" name="soal1" id="jawaban4" />
+                                    <input type="text" name="" id="" placeholder="Quarks" />
+                                </div>
+                                <div>
+                                    <input type="radio" name="soal1" id="jawaban5" />
+                                    <input type="text" name="" id="" placeholder="Atom" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-form">
+                    <div class="form">
+                        <div class="soal">
+                            <form action="">
+                                <input class="pertanyaan" type="text" placeholder="Pertanyaan" />
+                            </form>
+                            <div class="poin">
+                                <input class="poin" type="text" placeholder="0" />
+                                <span>Poin</span>
+                            </div>
+                        </div>
+                        <div class="jawaban">
+                            <form action="">
+                                <div>
+                                    <input type="radio" name="soal1" id="jawaban1" />
+                                    <input type="text" name="" id="" placeholder="Unsur" />
+                                </div>
+                                <div>
+                                    <input type="radio" name="soal1" id="jawaban2" />
+                                    <input type="text" name="" id="" placeholder="Molekul" />
+                                </div>
+                                <div>
+                                    <input type="radio" name="soal1" id="jawaban3" />
+                                    <input type="text" name="" id="" placeholder="Sel" />
+                                </div>
+                                <div>
+                                    <input type="radio" name="soal1" id="jawaban4" />
+                                    <input type="text" name="" id="" placeholder="Quarks" />
+                                </div>
+                                <div>
+                                    <input type="radio" name="soal1" id="jawaban5" />
+                                    <input type="text" name="" id="" placeholder="Atom" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="tambah-kuis-tambah-pertanyaan.html" class="btn tambah-pertanyaan">+ Pertanyaan</a>
+                <a onclick="konfirmasi()" class="btn upload-kuis">Upload Kuis</a>
+            </div>
+        </div>
+
+        <style>
+            footer {
+                margin-top: 20px;
+                background-color: #3464a0;
+                color: white;
+                height: fit-content;
+                padding: 20px;
+                font-family: "Poppins-SemiBold";
+            }
+
+            footer span {
+                margin-left: 50px;
+                font-size: 13px;
+            }
+
+            footer img {
+                width: 100px;
+            }
+        </style>
+
+        <footer>
+            <div class="container">
+                <img src="imgs/image 3.png" alt="" />
+                <span>&copy; 2023 NINO Limited</span>
+            </div>
+        </footer>
+    </body>
+    <script src="js/loadHtml.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        let bgKonfirmasi = document.querySelector(".bg-konfirmasi");
+
+        function move() {
+            window.location = "konfirmasi-kuis.html";
+        }
+
+        function konfirmasi() {
+            bgKonfirmasi.style.display = "flex";
+        }
+
+        function tutup() {
+            bgKonfirmasi.style.display = "none";
+        }
+
+        function daftar() {
+            move();
+        }
+
+        function tampilkan(no) {
+            let dropdown = document.querySelector(".container .courses .course-detail div.atas .dropdown" + no);
+            dropdown.classList.toggle("muncul");
+        }
+    </script>
+</html>

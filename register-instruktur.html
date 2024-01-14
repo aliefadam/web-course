@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register - Instuktur</title>
+        <link rel="stylesheet" href="css/register-instruktur.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="imgs/image 2.png" />
+                </a>
+            </div>
+        </nav>
+        <!-- akhir navbar -->
+
+        <div class="container kotak">
+            <div class="tombol-back">
+                <a href="daftar-materi-pemahaman-instruktur.html">
+                    <img src="imgs/arrow-left.png" alt="" />
+                </a>
+            </div>
+            <div class="form">
+                <div class="atas">
+                    <h1>Buat Akun Instuktur</h1>
+                </div>
+                <hr />
+                <div class="tengah">
+                    <div class="isi">
+                        <div class="kiri">
+                            <div class="label">
+                                <label for="nama">Nama</label>
+                            </div>
+                            <div class="label">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="label">
+                                <label for="nama-pengguna">Nama Pengguna</label>
+                            </div>
+                            <div class="label">
+                                <label for="kata-sandi">Kata Sandi</label>
+                            </div>
+                            <div class="label">
+                                <label for="ulangi-kata-sandi">Ulangi Kata Sandi</label>
+                            </div>
+                        </div>
+                        <div class="kanan">
+                            <div class="input nama">
+                                <select name="" id="">
+                                    <option value="">Sapaan</option>
+                                    <option value="">Mr.</option>
+                                    <option value="">Ms.</option>
+                                    <option value="">Mrs.</option>
+                                </select>
+                                <input type="text" name="" id="nama" placeholder="Nama Depan" />
+                                <input type="text" name="" id="" placeholder="Nama Belakang" />
+                            </div>
+                            <div class="input gambar">
+                                <img src="imgs/sms.png" alt="" />
+                                <input type="text" name="" id="email" placeholder="Masukkan Email" />
+                            </div>
+                            <div class="input gambar">
+                                <img src="imgs/user.png" alt="" />
+                                <input type="text" name="" id="nama-pengguna" placeholder="Masukkan Nama Pengguna" />
+                            </div>
+                            <div class="input gambar">
+                                <img src="imgs/lock.png" alt="" />
+                                <input type="password" name="" id="kata-sandi" placeholder="Masukkan Kata Sandi" />
+                                <img onclick="aksi()" class="mata" src="imgs/eye-slash.png" alt="" />
+                            </div>
+                            <div class="input gambar">
+                                <img src="imgs/lock.png" alt="" />
+                                <input type="password" name="" id="ulangi-kata-sandi" placeholder="Ulangi Kata Sandi" />
+                                <img onclick="aksi2()" class="mata2" src="imgs/eye-slash.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="bawah" />
+                <div class="bawah">
+                    <a href="" class="btn daftar">Daftar</a>
+                </div>
+            </div>
+        </div>
+        <script src="js/bootstrap.js"></script>
+        <script>
+            let img = document.querySelector("img.mata");
+            let img2 = document.querySelector("img.mata2");
+            let input = document.getElementById("kata-sandi");
+            let input2 = document.getElementById("ulangi-kata-sandi");
+
+            function aksi() {
+                if (input.type == "text") {
+                    input.type = "password";
+                    img.src = "imgs/eye-slash.png";
+                } else {
+                    input.type = "text";
+                    img.src = "imgs/eye.png";
+                }
+            }
+
+            function aksi2() {
+                if (input2.type == "text") {
+                    input2.type = "password";
+                    img2.src = "imgs/eye-slash.png";
+                } else {
+                    input2.type = "text";
+                    img2.src = "imgs/eye.png";
+                }
+            }
+        </script>
+    </body>
+</html>

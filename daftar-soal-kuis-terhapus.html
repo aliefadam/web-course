@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kuis Setelah Hapus - Instruktur</title>
+        <link rel="stylesheet" href="css/konfirmasi-kuis.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+
+        <style>
+            body {
+                position: relative;
+                height: calc(100vh - 100px);
+            }
+            a.btn.selesai {
+                background-color: #396eb0;
+                color: white;
+                width: 400px;
+                margin: 40px auto;
+                display: block;
+            }
+
+            footer {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="imgs/image 2.png" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item gambar">
+                            <img src="imgs/home.png" alt="" />
+                            <a class="nav-link" href="dashboard-instruktur.html">BERANDA</a>
+                        </li>
+                        <li class="nav-item dropdown gambar">
+                            <img src="imgs/book.png" alt="" />
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">COURSE</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="pengetahuan-kompononen-instuktur.html">Pengetahuan Komponen</a></li>
+                                <li><a class="dropdown-item" href="daftar-materi-pemahaman-instruktur.html">Pengetahuan Teori</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item gambar">
+                            <img src="imgs/messages.png" alt="qna" />
+                            <a class="nav-link" href="#">Q & A</a>
+                        </li>
+                        <li class="nav-item gambar warna">
+                            <img src="imgs/task-square.png" alt="" />
+                            <a href="quis-instruktur.html" class="nav-link">KUIS</a>
+                        </li>
+                        <li class="nav-item">
+                            <div>
+                                <img src="imgs/Ellipse 21.png" alt="" />
+                            </div>
+                            <div>
+                                <span>John Doe</span>
+                                <span>Instuktur</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- akhir navbar -->
+
+        <div class="container kotak">
+            <header>
+                <div class="kiri">
+                    <div class="tombol-back">
+                        <a href="kuis-setelah-hapus.html">
+                            <img src="imgs/arrow-left.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="title">
+                        <h1>Kuis Dasar Teknik Elektro</h1>
+                    </div>
+                </div>
+                <div class="kanan">
+                    <a href="" class="btn simpan">Simpan Perubahan</a>
+                    <a href="" class="btn batal">Batal</a>
+                </div>
+            </header>
+
+            <div class="box">
+                <div class="tombol-aksi">
+                    <a href="edit-kuis.html" class="btn edit">Pulihkan</a>
+                </div>
+                <span class="soal">2. Konsep Atom pertama dikemukakan oleh ?</span>
+                <form action="">
+                    <div>
+                        <input type="radio" name="soal1" id="jawaban1" />
+                        <label for="jawaban1">Demokritus</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="soal1" id="jawaban2" />
+                        <label for="jawaban2">Thales Miletus</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="soal1" id="jawaban3" />
+                        <label for="jawaban3">Jhon Dalton</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="soal1" id="jawaban4" />
+                        <label for="jawaban4">Louis De Broglie</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="soal1" id="jawaban5" />
+                        <label for="jawaban5">Richard Feynmann</label>
+                    </div>
+                </form>
+            </div>
+
+            <a href="" class="btn selesai">Selesai</a>
+        </div>
+
+        <style>
+            footer {
+                margin-top: 20px;
+                background-color: #3464a0;
+                color: white;
+                height: fit-content;
+                padding: 20px;
+                font-family: "Poppins-SemiBold";
+            }
+
+            footer span {
+                margin-left: 50px;
+                font-size: 13px;
+            }
+
+            footer img {
+                width: 100px;
+            }
+        </style>
+
+        <footer>
+            <div class="container">
+                <img src="imgs/image 3.png" alt="" />
+                <span>&copy; 2023 NINO Limited</span>
+            </div>
+        </footer>
+    </body>
+    <script src="js/loadHtml.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        let bgKonfirmasi = document.querySelector(".bg-konfirmasi");
+
+        function move() {
+            window.location = "konfirmasi-kuis.html";
+        }
+
+        function konfirmasi() {
+            bgKonfirmasi.style.display = "flex";
+        }
+
+        function tutup() {
+            bgKonfirmasi.style.display = "none";
+        }
+
+        function daftar() {
+            move();
+        }
+
+        function tampilkan(no) {
+            let dropdown = document.querySelector(".container .courses .course-detail div.atas .dropdown" + no);
+            dropdown.classList.toggle("muncul");
+        }
+    </script>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link rel="stylesheet" href="css/login.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+    </head>
+    <body>
+        <div class="konten">
+            <div class="kiri">
+                <img src="imgs/Rectangle 197.png" alt="" class="bg" />
+                <img src="imgs/image 2.png" alt="" class="logo" />
+                <img src="imgs/Group 148.png" alt="" class="orang" />
+                <img src="imgs/Rectangle 200.png" alt="" class="atas1" />
+                <img src="imgs/Rectangle 201.png" alt="" class="atas2" />
+                <img src="imgs/Rectangle 199.png" alt="" class="bawah1" />
+                <img src="imgs/Rectangle 198.png" alt="" class="bawah2" />
+            </div>
+            <div class="kanan">
+                <div class="login">
+                    <h1 class="text-center mb-3">Selamat Datang Kembali</h1>
+                    <form action="">
+                        <label for="email">Email</label>
+                        <div class="input">
+                            <img src="imgs/user.png" alt="" />
+                            <input placeholder="Masukkan Email" type="email" name="" id="email" />
+                        </div>
+                        <label for="password">Kata Sandi</label>
+                        <div class="input">
+                            <img src="imgs/lock.png" alt="" />
+                            <input placeholder="Masukkan Kata Sandi" type="password" name="" id="password" />
+                            <img onclick="aksi()" class="mata" src="imgs/eye-slash.png" alt="" />
+                        </div>
+                        <a href="dashboard-pelajar.html" class="btn">Masuk</a>
+                        <p class="text-center">Belum Punya Akun ?</p>
+                        <a href="register-pelajar.html" class="btn daftar">Daftar</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/bootstrap.js"></script>
+        <script>
+            let img = document.querySelector("img.mata");
+            let input = document.getElementById("password");
+
+            function aksi() {
+                if (input.type == "text") {
+                    input.type = "password";
+                    img.src = "imgs/eye-slash.png";
+                } else {
+                    input.type = "text";
+                    img.src = "imgs/eye.png";
+                }
+            }
+        </script>
+    </body>
+</html>

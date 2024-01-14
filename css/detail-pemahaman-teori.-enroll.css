@@ -1,0 +1,259 @@
+@import url("fonts.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins" !important;
+    position: relative;
+}
+
+nav {
+    background-color: #e9ebf8 !important;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+    font-family: "Poppins-SemiBold";
+    font-size: 12px;
+}
+
+nav .gambar.warna a {
+    color: #396eb0 !important;
+}
+
+nav a {
+    color: #6a6a6a !important;
+}
+
+nav a img {
+    margin-top: -7px;
+    width: 100px;
+    object-fit: cover;
+}
+
+nav .nav-item.gambar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+nav .nav-item.gambar.warna img {
+    width: 20px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    filter: grayscale(0);
+}
+
+nav .nav-item.gambar.warna ul li a {
+    color: #6a6a6a !important;
+}
+
+nav .nav-item.gambar img {
+    width: 20px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    filter: grayscale(1);
+}
+
+nav .nav-item:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+nav .nav-item:last-child div:first-child img {
+    width: 50px;
+}
+
+nav .nav-item:last-child div:last-child {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav .nav-item:last-child div:last-child span:first-child {
+    font-family: "Poppins-SemiBold";
+    font-size: 13px;
+}
+
+nav .nav-item:last-child div:last-child span:last-child {
+    font-family: "Poppins";
+    font-size: 12px;
+}
+
+nav .dropdown-menu {
+    border-radius: 15px;
+}
+
+.container.kotak {
+    margin-top: 170px;
+    display: flex;
+}
+
+.container.kotak .kiri {
+    width: 50%;
+}
+
+.overlay {
+    position: absolute;
+    top: -70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.overlay .message {
+    background-color: #c4e6c2;
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    font-family: "Poppins";
+}
+
+.overlay .message span {
+    color: #1c4918;
+    font-size: 15px;
+}
+
+.container .video {
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../imgs/bg-video.png");
+    background-position: center;
+    object-fit: cover;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.container .video img {
+    position: absolute;
+    z-index: 2;
+    width: 40px;
+}
+
+.container h1.rangkaian {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: "Poppins-Bold";
+    color: #396eb0;
+    font-size: 30px;
+}
+
+.container span.ringkasan {
+    width: fit-content;
+    padding: 5px 13px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #396eb0;
+    font-family: "Poppins-SemiBold";
+}
+
+.container div.ringkasan {
+    margin-top: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.container div.ringkasan h5 {
+    font-family: "Poppins-SemiBold";
+    font-size: 18px;
+}
+
+.container div.ringkasan p.desk {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 95%;
+    text-align: justify;
+}
+
+.container div.ringkasan p:nth-child(3),
+.container div.ringkasan p:nth-child(4),
+.container div.ringkasan p:nth-child(5) {
+    font-size: 13px;
+    margin: 0 !important;
+}
+
+.container div.ringkasan p:nth-child(3) span,
+.container div.ringkasan p:nth-child(4) span,
+.container div.ringkasan p:nth-child(5) span {
+    font-family: "Poppins-SemiBold";
+    margin: 0 !important;
+}
+
+.container a.enroll {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #396eb0;
+    color: white;
+    font-size: 12px;
+}
+
+.container .kanan {
+    margin-left: 40px;
+    width: 50%;
+}
+
+.container .kanan .box {
+    display: flex;
+    background-color: #e9ebf8;
+    border-bottom: 2px solid #396eb0;
+}
+
+.container .kanan .box.open {
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.container .kanan .box .gambar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.container .kanan .box .gambar img {
+    width: 40px;
+}
+
+.container .kanan .box .desk {
+    padding: 15px 5px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .kanan .box .desk h3 {
+    font-family: "Poppins-Bold";
+    font-size: 15px;
+}
+
+.container .kanan .box .desk h3.evaluasi {
+    margin-top: -5px;
+}
+
+.container .kanan .box .desk p {
+    width: 90%;
+    font-size: 13px;
+}

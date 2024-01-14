@@ -1,0 +1,103 @@
+<style>
+    nav {
+        background-color: #e9ebf8 !important;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+        font-family: "Poppins-SemiBold";
+        font-size: 12px;
+    }
+
+    nav .gambar.warna a {
+        color: #396eb0 !important;
+    }
+
+    nav a {
+        color: #6a6a6a !important;
+    }
+
+    nav a img {
+        margin-top: -7px;
+        width: 100px;
+        object-fit: cover;
+    }
+
+    nav .nav-item.gambar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px 0 10px;
+    }
+
+    nav .nav-item.gambar.warna img {
+        width: 20px;
+        margin-top: 10px;
+        margin-bottom: -5px;
+        filter: grayscale(0);
+    }
+
+    nav .nav-item.gambar img {
+        width: 20px;
+        margin-top: 10px;
+        margin-bottom: -5px;
+        filter: grayscale(1);
+    }
+
+    nav .nav-item:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    nav .nav-item:last-child div:first-child img {
+        width: 50px;
+    }
+
+    nav .nav-item:last-child div:last-child {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .nav-item:last-child div:last-child span:first-child {
+        font-family: "Poppins-SemiBold";
+        font-size: 13px;
+    }
+
+    nav .nav-item:last-child div:last-child span:last-child {
+        font-family: "Poppins";
+        font-size: 12px;
+    }
+
+    nav .dropdown-menu {
+        border-radius: 15px;
+    }
+</style>
+
+<script>
+    // Mendapatkan path URL saat ini
+    var currentPage = window.location.pathname.split("/").pop();
+
+    console.log(currentPage);
+
+    // Mendapatkan semua elemen nav-link
+    var navLinks = document.getElementsByClassName("nav-link");
+
+    // Menambahkan kelas 'active' pada elemen nav-link yang sesuai dengan halaman yang sedang aktif
+    for (var i = 0; i < navLinks.length; i++) {
+        var linkHref = navLinks[i].getAttribute("href");
+
+        // Jika linkHref sama dengan currentPage atau linkHref adalah '#', tambahkan kelas 'active'
+        if (linkHref === currentPage || linkHref === "#") {
+            navLinks[i].classList.add("active");
+
+            // Jika nav-link merupakan elemen child dari dropdown, tambahkan juga kelas 'active' pada dropdown parent
+            if (navLinks[i].classList.contains("dropdown-item")) {
+                var dropdownParent = navLinks[i].closest(".dropdown");
+                if (dropdownParent) {
+                    dropdownParent.classList.add("active");
+                }
+            }
+        }
+    }
+</script>

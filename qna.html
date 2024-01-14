@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Q & A</title>
+        <link rel="stylesheet" href="css/qna.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="imgs/image 2.png" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item gambar">
+                            <img src="imgs/home.png" alt="" />
+                            <a class="nav-link" href="dashboard-pelajar.html">BERANDA</a>
+                        </li>
+                        <li class="nav-item dropdown gambar">
+                            <img src="imgs/book.png" alt="" />
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">COURSE</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="course-pemahaman-teori-pelajar.html">Pengetahuan Komponen</a></li>
+                                <li><a class="dropdown-item" href="course-pemahaman-teori-pelajar.html">Pengetahuan Teori</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item gambar warna">
+                            <img src="imgs/messages.png" alt="" />
+                            <a class="nav-link" href="qna.html">Q & A</a>
+                        </li>
+                        <li class="nav-item gambar">
+                            <img src="imgs/task-square.png" alt="" />
+                            <a href="quiz.html" class="nav-link">KUIS</a>
+                        </li>
+                        <li class="nav-item">
+                            <div>
+                                <img src="imgs/Ellipse 14.png" alt="" />
+                            </div>
+                            <div>
+                                <span>Kaitlin Gregory</span>
+                                <span>Pelajar</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- akhir navbar -->
+
+        <div class="container kotak">
+            <div class="title">
+                <div class="judul">
+                    <h1>Tanya Jawab</h1>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="kiri">
+                    <p>
+                        <span><a href="dashboard-pelajar.html">Dashboard</a> / </span> Tanya Jawab
+                    </p>
+                </div>
+                <div class="kanan">
+                    <form action="">
+                        <select name="" id="">
+                            <option value="">Terbaru</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+
+            <div class="qna">
+                <div class="asking box-pertanyaan" style="cursor: pointer">
+                    <div class="asking-detail">
+                        <img src="imgs/Ellipse 14.png" alt="" />
+                        <form action="">
+                            <input class="input-pertanyaan4" type="text" placeholder="Apa yang ingin anda tanyakan?" onclick="tampil()" />
+                        </form>
+                    </div>
+                    <div class="aksi4" style="display: none">
+                        <button class="btn batal">Batal</button>
+                        <button class="btn kirim">Kirim Jawaban</button>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="question" style="cursor: pointer" onclick="detail()">
+                        <div class="kiri">
+                            <img src="imgs/Ellipse 18 (2).png" alt="" />
+                        </div>
+                        <div class="kanan">
+                            <h6>Natasya Sibley <span>Pelajar</span></h6>
+                            <p>Ditanyakan pada : 27 Maret 2023</p>
+                            <h5>Apa itu elektronika dan apa saja komponen-komponennya?</h5>
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="kiri">
+                            <img src="imgs/Ellipse 18.png" alt="" />
+                        </div>
+                        <div class="kanan">
+                            <p class="instruktur">Instruktur</p>
+                            <h6>Natasya Sibley</h6>
+                            <p class="jawaban">
+                                Elektronika adalah ilmu yang mempelajari alat listrik arus lemah yang dioperasikan dengan cara mengontrol aliran elektron atau partikel bermuatan listrik dalam suatu alat seperti komputer,
+                                peralatanelektronik, termokopel, semikonduktor.. <a href="#">(selengkapnya)</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="kiri">
+                            <img src="imgs/Ellipse 18 (3).png" alt="" />
+                        </div>
+                        <div class="kanan">
+                            <p class="instruktur">Instruktur</p>
+                            <h6>Natasya Sibley</h6>
+                            <p class="jawaban">
+                                Elektronika adalah ilmu yang mempelajari alat listrik arus lemah yang dioperasikan dengan cara mengontrol aliran elektron atau partikel bermuatan listrik dalam suatu alat seperti komputer,
+                                peralatanelektronik, termokopel, semikonduktor.. <a href="#">(selengkapnya)</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <a href="#">Lihat jawaban lainnya..</a>
+                    </div>
+                    <div class="reply">
+                        <img src="imgs/Ellipse 14.png" alt="" />
+                        <form action="">
+                            <input class="input-pertanyaan" type="text" placeholder="Apa yang ingin anda tanyakan?" onclick="showButton()" />
+                        </form>
+                    </div>
+                    <div class="aksi" style="display: none">
+                        <button class="btn batal">Batal</button>
+                        <button class="btn kirim">Kirim Jawaban</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qna">
+                <div class="box">
+                    <div class="question">
+                        <div class="kiri">
+                            <img src="imgs/Ellipse 18 (6).png" alt="" />
+                        </div>
+                        <div class="kanan">
+                            <h6>Natasya Sibley <span>Pelajar</span></h6>
+                            <p>Ditanyakan pada : 27 Maret 2023</p>
+                            <h5>Apa itu elektronika dan apa saja komponen-komponennya?</h5>
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="kiri">
+                            <img src="imgs/Ellipse 18 (7).png" alt="" />
+                        </div>
+                        <div class="kanan">
+                            <p class="instruktur">Instruktur</p>
+                            <h6>Natasya Sibley</h6>
+                            <p class="jawaban">
+                                Elektronika adalah ilmu yang mempelajari alat listrik arus lemah yang dioperasikan dengan cara mengontrol aliran elektron atau partikel bermuatan listrik dalam suatu alat seperti komputer,
+                                peralatanelektronik, termokopel, semikonduktor.. <a href="#">(selengkapnya)</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="kiri">
+                            <img src="imgs/Ellipse 18.png" alt="" />
+                        </div>
+                        <div class="kanan">
+                            <p class="instruktur">Instruktur</p>
+                            <h6>Natasya Sibley</h6>
+                            <p class="jawaban">
+                                Elektronika adalah ilmu yang mempelajari alat listrik arus lemah yang dioperasikan dengan cara mengontrol aliran elektron atau partikel bermuatan listrik dalam suatu alat seperti komputer,
+                                peralatanelektronik, termokopel, semikonduktor.. <a href="#">(selengkapnya)</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <a href="#">Lihat jawaban lainnya..</a>
+                    </div>
+                    <div class="reply">
+                        <img src="imgs/Ellipse 14.png" alt="" />
+                        <form action="">
+                            <input class="input-pertanyaan2" type="text" placeholder="Apa yang ingin anda tanyakan?" onclick="showButton2()" />
+                        </form>
+                    </div>
+                    <div class="aksi aksi2" style="display: none">
+                        <button class="btn batal">Batal</button>
+                        <button class="btn kirim">Kirim Jawaban</button>
+                    </div>
+                </div>
+            </div>
+            <div class="qna">
+                <div class="box">
+                    <div class="question">
+                        <div class="kiri">
+                            <img src="imgs/Ellipse 18 (4).png" alt="" />
+                        </div>
+                        <div class="kanan">
+                            <h6>Natasya Sibley <span>Pelajar</span></h6>
+                            <p>Ditanyakan pada : 27 Maret 2023</p>
+                            <h5>Apa itu elektronika dan apa saja komponen-komponennya?</h5>
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="kiri">
+                            <img src="imgs/Ellipse 19 (1).png" alt="" />
+                        </div>
+                        <div class="kanan">
+                            <p class="instruktur">Instruktur</p>
+                            <h6>Natasya Sibley</h6>
+                            <p class="jawaban">
+                                Elektronika adalah ilmu yang mempelajari alat listrik arus lemah yang dioperasikan dengan cara mengontrol aliran elektron atau partikel bermuatan listrik dalam suatu alat seperti komputer,
+                                peralatanelektronik, termokopel, semikonduktor.. <a href="#">(selengkapnya)</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="kiri">
+                            <img src="imgs/Ellipse 18 (5).png" alt="" />
+                        </div>
+                        <div class="kanan">
+                            <p class="instruktur">Instruktur</p>
+                            <h6>Natasya Sibley</h6>
+                            <p class="jawaban">
+                                Elektronika adalah ilmu yang mempelajari alat listrik arus lemah yang dioperasikan dengan cara mengontrol aliran elektron atau partikel bermuatan listrik dalam suatu alat seperti komputer,
+                                peralatanelektronik, termokopel, semikonduktor.. <a href="#">(selengkapnya)</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <a href="#">Lihat jawaban lainnya..</a>
+                    </div>
+                    <div class="reply">
+                        <img src="imgs/Ellipse 14.png" alt="" />
+                        <form action="">
+                            <input class="input-pertanyaan3" type="text" placeholder="Apa yang ingin anda tanyakan?" onclick="showButton3()" />
+                        </form>
+                    </div>
+                    <div class="aksi aksi3" style="display: none">
+                        <button class="btn batal">Batal</button>
+                        <button class="btn kirim">Kirim Jawaban</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            footer {
+                margin-top: 20px;
+                background-color: #3464a0;
+                color: white;
+                height: fit-content;
+                padding: 20px;
+                font-family: "Poppins-SemiBold";
+            }
+
+            footer span {
+                margin-left: 50px;
+                font-size: 13px;
+            }
+
+            footer img {
+                width: 100px;
+            }
+        </style>
+
+        <footer>
+            <div class="container">
+                <img src="imgs/image 3.png" alt="" />
+                <span>&copy; 2023 NINO Limited</span>
+            </div>
+        </footer>
+    </body>
+    <script src="js/loadHtml.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        function detail() {
+            window.location = "detail-qna.html";
+        }
+
+        document.addEventListener("click", function (event) {
+            let pertanyaan = document.querySelector(".pertanyaan");
+            let box_pertanyaan = document.querySelector(".box-pertanyaan");
+
+            if (event.target !== pertanyaan && event.target === box_pertanyaan) {
+                window.location = "detail-qna.html";
+            }
+        });
+
+        function showButton() {
+            let aksi = document.querySelector(".aksi");
+            aksi.style.display = "flex";
+        }
+
+        document.addEventListener("click", function (event) {
+            let aksi = document.querySelector(".aksi");
+            let input = document.querySelector(".input-pertanyaan");
+
+            if (event.target !== input && event.target !== aksi) {
+                aksi.style.display = "none";
+            }
+        });
+
+        function showButton2() {
+            let aksi2 = document.querySelector(".aksi2");
+            aksi2.style.display = "flex";
+        }
+
+        document.addEventListener("click", function (event) {
+            let aksi2 = document.querySelector(".aksi2");
+            let input2 = document.querySelector(".input-pertanyaan2");
+
+            if (event.target !== input2 && event.target !== aksi2) {
+                aksi2.style.display = "none";
+            }
+        });
+
+        function showButton3() {
+            let aksi3 = document.querySelector(".aksi3");
+            aksi3.style.display = "flex";
+        }
+
+        document.addEventListener("click", function (event) {
+            let aksi3 = document.querySelector(".aksi3");
+            let input3 = document.querySelector(".input-pertanyaan3");
+
+            if (event.target !== input3 && event.target !== aksi3) {
+                aksi3.style.display = "none";
+            }
+        });
+
+        function showButton4() {
+            aletrt("tes");
+            let aksi4 = document.querySelector(".aksi4");
+            aksi4.style.display = "flex";
+        }
+
+        document.addEventListener("click", function (event) {
+            let aksi4 = document.querySelector(".aksi4");
+            let input4 = document.querySelector(".input-pertanyaan4");
+
+            if (event.target !== input4 && event.target !== aksi4) {
+                aksi4.style.display = "none";
+            }
+        });
+
+        function tampil() {
+            let aksi4 = document.querySelector(".aksi4");
+            aksi4.style.display = "flex";
+        }
+    </script>
+</html>

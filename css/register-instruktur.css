@@ -1,0 +1,232 @@
+@import url("fonts.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins" !important;
+}
+
+nav {
+    background-color: #e9ebf8 !important;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+}
+
+nav a img {
+    margin-top: -7px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.container.kotak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 70px);
+}
+
+.container .tombol-back {
+    display: flex;
+    width: 600px;
+    margin-bottom: 30px;
+}
+
+.container .tombol-back img {
+    filter: grayscale(1);
+}
+
+.container .form {
+    border: 1px solid #1d1d1d;
+    width: 600px;
+    border-radius: 15px;
+}
+
+.container .form .atas {
+    display: flex;
+    padding: 15px;
+}
+
+.container .form .atas h1 {
+    font-family: "Poppins-Bold";
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #396eb0;
+}
+
+.container .form hr {
+    margin-top: -10px;
+    border-top: 1px solid #1d1d1d;
+    opacity: 1;
+}
+
+.container .form .tengah {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.container .form .tengah .isi {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+}
+
+.container .form .tengah .kiri {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.container .form .tengah .kiri .label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 130px;
+    height: 38px;
+    margin-bottom: 15px;
+}
+
+.container .form .tengah .kiri label {
+    text-transform: uppercase;
+    font-family: "Poppins-SemiBold";
+    color: black;
+    font-size: 12px;
+}
+
+.container .form .tengah .kanan {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.container .form .tengah .kanan .nama {
+    display: flex;
+}
+
+.container .form .tengah .kanan .input {
+    position: relative;
+    margin-bottom: 15px;
+
+    width: 100%;
+    height: 37px;
+}
+
+.container .form .tengah .kanan .input.gambar {
+    background-color: #f7f7f7;
+}
+
+.container .form .tengah .kanan select {
+    font-size: 12px;
+    height: 38px;
+    width: 100%;
+    border: 1px solid #396eb0;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 15px;
+}
+
+.container .form .tengah .kanan .nama input {
+    width: 180px;
+}
+
+.container .form .tengah .kanan .nama input:first-child {
+    margin-right: 10px;
+}
+
+.container .form .tengah .kanan .input.nama {
+    justify-content: space-between;
+}
+
+.container .form .tengah .kanan .input.nama input {
+    font-size: 12px;
+    /* width: 50%; */
+    width: 120px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #396eb0;
+    height: 38px;
+    padding-left: 10px;
+    background-color: #f7f7f7;
+}
+
+.container .form .tengah .kanan .input.nama select {
+    width: 100px;
+}
+
+.container .form .tengah .kanan .input.gambar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #396eb0;
+    height: 38px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #f7f7f7;
+}
+
+.container .form .tengah .kanan .input.gambar img {
+    width: 20px;
+    height: 20px;
+}
+
+img.mata,
+img.mata2 {
+    cursor: pointer;
+}
+
+.container .form .tengah .kanan .input.gambar input {
+    font-size: 12px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    width: 80%;
+}
+
+.container .form .tengah .kanan .input.gambar input[id="email"],
+.container .form .tengah .kanan .input.gambar input[id="nama-pengguna"] {
+    width: 90%;
+}
+
+::placeholder {
+    font-size: 12px;
+}
+
+hr.bawah {
+    margin: 0;
+}
+
+.container .form .bawah {
+    padding-bottom: 20px;
+}
+
+.container .form .bawah a {
+    background-color: #396eb0;
+    color: white;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.container .form .bawah a.login {
+    font-family: "Poppins-SemiBold";
+    border: 1px solid #396eb0;
+    background-color: #e9ebf8;
+    color: #396eb0;
+}
+
+.container .form .bawah p {
+    margin: 10px;
+    font-size: 13px;
+}

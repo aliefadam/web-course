@@ -1,0 +1,332 @@
+@import url("fonts.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins" !important;
+}
+
+nav {
+    background-color: #e9ebf8 !important;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+    font-family: "Poppins-SemiBold";
+    font-size: 12px;
+}
+
+nav .gambar.warna a {
+    color: #396eb0 !important;
+}
+
+nav a {
+    color: #6a6a6a !important;
+}
+
+nav a img {
+    margin-top: -7px;
+    width: 100px;
+    object-fit: cover;
+}
+
+nav .nav-item.gambar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+nav .nav-item.gambar.warna img {
+    width: 20px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    filter: grayscale(0);
+}
+
+nav .nav-item.gambar.warna ul li a {
+    color: black !important;
+}
+
+nav .nav-item.gambar img {
+    width: 20px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    filter: grayscale(1);
+}
+
+nav .nav-item:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+nav .nav-item:last-child div:first-child img {
+    width: 50px;
+}
+
+nav .nav-item:last-child div:last-child {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav .nav-item:last-child div:last-child span:first-child {
+    font-family: "Poppins-SemiBold";
+    font-size: 13px;
+}
+
+nav .nav-item:last-child div:last-child span:last-child {
+    font-family: "Poppins";
+    font-size: 12px;
+}
+
+nav .dropdown-menu {
+    border-radius: 15px;
+}
+
+.bg-konfirmasi {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(31, 61, 97, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-konfirmasi .box {
+    width: 370px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.bg-konfirmasi .box p {
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "Poppins-SemiBold";
+    font-size: 15px;
+}
+
+.bg-konfirmasi .box .tombol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-konfirmasi .box a.btn {
+    width: calc(50% - 20px);
+    margin: 0 5px 0 5px;
+    font-size: 13px;
+    font-family: "Poppins-SemiBold";
+}
+
+.bg-konfirmasi .box a.btn.batal {
+    border: 1px solid #396eb0;
+    color: #396eb0;
+}
+
+.bg-konfirmasi .box a.btn.daftar {
+    background-color: #396eb0;
+    color: white;
+}
+
+.container.kotak {
+    margin-top: 100px;
+}
+
+.container header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container header .kiri {
+    display: flex;
+}
+
+.container header .kanan {
+    display: flex;
+    justify-content: space-between;
+    width: 38%;
+}
+
+.container header .kanan a.simpan {
+    background-color: #396eb0;
+    color: white;
+    width: 200px;
+    font-size: 13px;
+    font-family: "Poppins-SemiBold";
+    letter-spacing: 1.3px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container header .kanan a.batal {
+    background-color: #e9ebf8;
+    color: #396eb0;
+    width: 200px;
+    font-size: 13px;
+    font-family: "Poppins-SemiBold";
+    letter-spacing: 1.3px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.container header .tombol-back {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.container header .tombol-back img {
+    width: 35px;
+    filter: grayscale(1);
+}
+
+.container header .title {
+    width: 100%;
+}
+
+.container header .title h1 {
+    font-family: "Poppins-Bold";
+    font-size: 30px;
+    margin: 0;
+    color: #396eb0;
+}
+
+.container .box {
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 13px;
+    margin: 20px 0;
+}
+
+.container .box .tombol-aksi {
+    margin-bottom: 10px;
+}
+
+.container .box .tombol-aksi a.edit {
+    background-color: #396eb0;
+    color: white;
+    width: 120px;
+    margin-right: 10px;
+}
+
+.container .box .tombol-aksi a.hapus {
+    background-color: #e83b24;
+    color: white;
+    width: 120px;
+}
+
+.container .box span.bobot {
+    font-family: "Poppins-SemiBold";
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container .box form {
+    margin-left: 1%;
+}
+
+.container .box form div {
+    margin: 3px 0;
+    display: flex;
+}
+
+.container .box form div input {
+    margin-right: 10px;
+}
+
+.container .box form div input[type="text"] {
+    border: 1px solid #bbb !important;
+    width: 10% !important;
+    height: 30px;
+    padding: 2px;
+}
+
+.container .box .editor-detail .kiri .editor {
+    outline: none;
+    border: none;
+}
+
+.container .other {
+    margin-top: 50px;
+    display: flex;
+    height: 40px;
+}
+
+.container .other .bagian {
+    width: calc(100% / 3);
+    display: flex;
+}
+
+.container .other .bagian.pagination {
+    justify-content: center;
+}
+
+.container .other .bagian.pagination .page {
+    width: 40px;
+    height: 100%;
+    border: 1px solid #a9a9a9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #396eb0;
+    font-family: "Poppins-SemiBold";
+    cursor: pointer;
+}
+
+.page-active {
+    color: white !important;
+    background-color: #396eb0;
+}
+
+.container .other .bagian:last-child {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container .other .bagian:last-child a {
+    border: 1px solid #396eb0;
+    background-color: #e9ebf8;
+    color: #396eb0;
+    font-family: "Poppins-SemiBold";
+    letter-spacing: 1.3px;
+    height: 30px;
+    font-size: 12px;
+}
+
+.container .editor .inline-editor {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: calc(100% - 40px);
+    height: 45px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.container .editor .inline-editor img {
+    width: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+}

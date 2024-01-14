@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dashboard - Instruktur</title>
+        <link rel="stylesheet" href="css/tambah-teori.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+
+        <style>
+            .tombol-aksi {
+                width: 37% !important;
+            }
+
+            .tombol-aksi a.selesai {
+                width: 250px !important;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="imgs/image 2.png" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item gambar">
+                            <img src="imgs/home.png" alt="" />
+                            <a class="nav-link" href="dashboard-instruktur.html">BERANDA</a>
+                        </li>
+                        <li class="nav-item dropdown gambar warna">
+                            <img src="imgs/book.png" alt="" />
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">COURSE</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="pengetahuan-kompononen-instuktur.html">Pengetahuan Komponen</a></li>
+                                <li><a class="dropdown-item" href="daftar-materi-pemahaman-instruktur.html">Pengetahuan Teori</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item gambar">
+                            <img src="imgs/messages.png" alt="qna" />
+                            <a class="nav-link" href="#">Q & A</a>
+                        </li>
+                        <li class="nav-item gambar">
+                            <img src="imgs/task-square.png" alt="" />
+                            <a href="quis-instruktur.html" class="nav-link">KUIS</a>
+                        </li>
+                        <li class="nav-item">
+                            <div>
+                                <img src="imgs/Ellipse 21.png" alt="" />
+                            </div>
+                            <div>
+                                <span>John Doe</span>
+                                <span>Instuktur</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- akhir navbar -->
+
+        <div class="container kotak">
+            <div class="keterangan">
+                <div class="tombol-back">
+                    <a href="daftar-materi-pemahaman-instruktur.html">
+                        <img src="imgs/arrow-left.png" alt="" />
+                    </a>
+                    <h1>Edit Teori</h1>
+                </div>
+
+                <div class="tombol-aksi">
+                    <a href="" class="btn selesai">Simpan Perubahan</a>
+                    <a href="dashboard-instruktur.html" class="btn batal">Batal</a>
+                </div>
+            </div>
+
+            <div class="editor">
+                <form action="">
+                    <input class="judul" type="text" placeholder="Tambahkan Judul" value="Pelajaran 01 : Konsep Dasar Rangkaian Listrik" />
+                </form>
+                <div class="editor-detail">
+                    <div class="inline-editor">
+                        <img src="imgs/bold.png" alt="" onclick="execCommand('bold')" class="ms-3" />
+                        <img src="imgs/italic.png" alt="" onclick="execCommand('italic')" />
+                        <img src="imgs/underline.png" alt="" onclick="execCommand('underline')" />
+                        <img src="imgs/strikeThrough.png" alt="" onclick="execCommand('strikethrough')" />
+                        <img src="imgs/textColor.png" alt="" />
+                        <img src="imgs/backgroundColor.png" alt="" />
+                        <img src="imgs/smile.png" alt="" onclick="" class="me-5" />
+                        <img src="imgs/Dropdown.png" alt="" onclick="" />
+                        <img src="imgs/Dropdown-1.png" alt="" onclick="" />
+                        <img src="imgs/Dropdown-2.png" alt="" onclick="" />
+                        <img src="imgs/Dropdown-3.png" alt="" onclick="" />
+                        <img src="imgs/indent.png" alt="" onclick="" />
+                        <img src="imgs/outdent.png" alt="" onclick="" class="me-5" />
+                        <img src="imgs/insertImage.png" alt="" onclick="" />
+                        <img src="imgs/insertLink.png" alt="" onclick="" />
+                        <img src="imgs/insertFile.png" alt="" onclick="" />
+                        <img src="imgs/insertVideo.png" alt="" onclick="" />
+                        <img src="imgs/undo.png" alt="" onclick="" />
+                        <img src="imgs/redo.png" alt="" onclick="" />
+                    </div>
+                    <form action="">
+                        <div class="editor" contenteditable="true" oninput="handleInput()" id="editor">
+                            Rangkaian listrik adalah suatu kumpulan elemen atau komponen listrik yang saling dihubungkan dengan cara-cara tertentu dan paling sedikit mempunyai satu lintasan tertutup. Elemen atau komponen yang akan dibahas
+                            pada mata kuliah Rangkaian Listrik terbatas pada elemen atau komponen yang memiliki dua buah terminal atau kutub pada kedua ujungnya. Untuk elemen atau komponen yang lebih dari dua terminal dibahas pada mata
+                            kuliah Elektronika. Pembatasan elemen atau komponen listrik pada Rangkaian Listrik dapat dikelompokkan kedalam elemen atau komponen aktif dan pasif. <br /><br />Elemen aktif adalah elemen yang menghasilkan energi
+                            dalam hal ini adalah sumber tegangan dan sumber arus, mengenai sumber ini akan dijelaskan pada bab berikutnya. Elemen lain adalah elemen pasif dimana elemen ini tidak dapat menghasilkan energi, dapat
+                            dikelompokkan menjadi elemen yang hanya dapat menyerap energi dalam hal ini hanya terdapat pada komponen resistor atau banyak juga yang menyebutkan tahanan atau hambatan dengan simbol R, dan komponen pasif yang
+                            dapat menyimpan energi juga diklasifikasikan menjadi dua yaitu komponen atau lemen yang menyerap energi dalam bentuk medan magnet dalam hal ini induktor atau sering juga disebut sebagai lilitan, belitan atau
+                            kumparan dengan simbol L, dan komponen pasif yang menyerap energi dalam bentuk medan magnet dalam hal ini adalah kapasitor atau sering juga dikatakan dengan kondensator dengan simbol C, pembahasan mengenai ketiga
+                            komponen pasif tersebut nantinya akan dijelaskan pada bab berikutnya. Elemen atau kompoen listrik yang dibicarakan disini adalah : Elemen listrik dua terminal : Sumber tegangan, Sumber arus, Resistor ( R ),
+                            Induktor ( L ), Kapasitor ( C ) Elemen listrik lebih dari dua terminal a. Transistor b. Op-amp <br /><br />Berbicara mengenai Rangkaian Listrik, tentu tidak dapat dilepaskan dari pengertian dari rangkaian itu
+                            sendiri, dimana rangkaian adalah interkoneksi dari sekumpulan elemen atau komponen penyusunnya ditambah dengan rangkaian penghubungnya dimana disusun dengan cara-cara tertentu dan minimal memiliki satu lintasan
+                            tertutup. Dengan kata lain hanya dengan satu lintasan tertutup saja kita dapat menganalisis suatu rangkaian. Yang dimaksud dengan satu lintasan tertutup adalah satu lintasan saat kita mulai dari titik yang
+                            dimaksud akan kembali lagi ketitik tersebut tanpa terputus dan tidak memandang seberapa jauh atau dekat lintasan yang kita tempuh. Rangkaian listrik merupakan dasar dari teori rangkaian pada teknik elektro yang
+                            menjadi dasar atay fundamental bagi ilmu-ilmu lainnya seperti elektronika, sistem daya, sistem computer, putaran mesin, dan teori control. Pada pembahasan tentang rangkaian listrik, perlu kiranya kita mengetahui
+                            terlebih dahulu beberapa hal megenai apa itu yang dimaksud dengan listrik. Untuk memahami tentang listrik, perlu kita ketahui terlebih dahulu pengertian dari arus. <br /><br />Arus merupakan perubahan kecepatan
+                            muatan terhadap waktu atau muatan yang mengalir dalam satuan waktu dengan simbol i (dari kata Perancis : intensite), dengan kata lain arus adalah muatan yang bergerak. Selama muatan tersebut bergerak maka akan
+                            muncul arus tetapi ketika muatan tersebut diam maka arus pun akan hilang. Muatan akan bergerak jika ada energi luar yang memepengaruhinya. Muatan adalah satuan terkecil dari atom atau sub bagian dari atom. Dimana
+                            dalam teori atom modern menyatakan atom terdiri dari partikel inti (proton bermuatan + dan neutron bersifat netral) yang dikelilingi oleh muatan elektron (-), normalnya atom bermuatan netral. Muatan terdiri dari
+                            dua jenis yaitu muatan positif dan muatan negatif Arah arus searah dengan arah muatan positif (arah arus listrik) atau berlawanan dengan arah aliran elektron. Suatu partikel dapat menjadi muatan positif apabila
+                            kehilangan elektron dan menjadi muatan negatif apabila menerima elektron dari partikel lain.
+                        </div>
+                    </form>
+
+                    <script>
+                        const editor = document.getElementById("editor");
+
+                        function execCommand(command) {
+                            document.execCommand(command, false, null);
+                        }
+
+                        function setTextColor(color) {
+                            document.execCommand("foreColor", false, color);
+                        }
+
+                        function handleInput() {
+                            const placeholder = document.getElementById("placeholder");
+                            if (!editor.textContent.trim()) {
+                                if (placeholder) {
+                                    editor.removeChild(placeholder);
+                                }
+                                showPlaceholder();
+                            } else {
+                                if (placeholder) {
+                                    editor.removeChild(placeholder);
+                                }
+                            }
+                        }
+
+                        function showPlaceholder() {
+                            const placeholder = document.createElement("span");
+                            placeholder.id = "placeholder";
+                            placeholder.classList.add("placeholders");
+                            placeholder.textContent = placeholderText;
+                            editor.appendChild(placeholder);
+                        }
+
+                        showPlaceholder(); // menambahkan placeholder saat pertama kali halaman dimuat
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            footer {
+                margin-top: 20px;
+                background-color: #3464a0;
+                color: white;
+                height: fit-content;
+                padding: 20px;
+                font-family: "Poppins-SemiBold";
+            }
+
+            footer span {
+                margin-left: 50px;
+                font-size: 13px;
+            }
+
+            footer img {
+                width: 100px;
+            }
+        </style>
+
+        <footer>
+            <div class="container">
+                <img src="imgs/image 3.png" alt="" />
+                <span>&copy; 2023 NINO Limited</span>
+            </div>
+        </footer>
+    </body>
+    <script src="js/loadHtml.js"></script>
+    <script src="js/bootstrap.js"></script>
+</html>

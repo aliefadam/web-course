@@ -1,0 +1,87 @@
+@import url("fonts.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins" !important;
+}
+
+nav {
+    background-color: #e9ebf8 !important;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+    height: 70px;
+}
+
+nav a img {
+    margin-top: -7px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.container.kotak {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+}
+
+.container h1 {
+    font-family: "Poppins-Bold";
+    font-size: 30px;
+    text-align: center;
+    color: #396eb0;
+    margin-bottom: 20px;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.container .instruktur,
+.container .mahasiswa {
+    border: 1px solid #618bc0;
+    padding: 10px;
+    display: flex;
+    width: 650px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.container .instruktur .gambar,
+.container .mahasiswa .gambar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin-left: 25px;
+}
+
+.container .instruktur .gambar img,
+.container .mahasiswa .gambar img {
+    width: 120px;
+}
+
+.container .instruktur .deskripsi,
+.container .mahasiswa .deskripsi {
+    padding: 20px;
+    margin-left: 25px;
+}
+
+.container .instruktur .deskripsi h2,
+.container .mahasiswa .deskripsi h2 {
+    font-family: "Poppins-Bold";
+    color: #284e7d;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.container .instruktur .deskripsi p,
+.container .mahasiswa .deskripsi p {
+    font-size: 14px;
+    color: #182e4a;
+}

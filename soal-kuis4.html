@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Course Pemahaman Teori - Pelajar</title>
+        <link rel="stylesheet" href="css/evaluasi-pemahaman-teori.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+    </head>
+    <body>
+        <div class="bg-konfirmasi" style="display: none">
+            <div class="box">
+                <p>Anda yakin ingin mengumpulkan hasil evaluasi ini ?</p>
+                <div class="tombol">
+                    <a onclick="daftar()" class="daftar btn">Ya</a>
+                    <a onclick="tutup()" class="batal btn">Tidak</a>
+                </div>
+            </div>
+        </div>
+        <!-- navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="imgs/image 2.png" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item gambar">
+                            <img src="imgs/home.png" alt="" />
+                            <a class="nav-link" href="dashboard-pelajar.html">BERANDA</a>
+                        </li>
+                        <li class="nav-item dropdown gambar">
+                            <img src="imgs/book.png" alt="" />
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">COURSE</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="course-pemahaman-teori-pelajar.html">Pengetahuan Komponen</a></li>
+                                <li><a class="dropdown-item" href="course-pemahaman-teori-pelajar.html">Pengetahuan Teori</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item gambar">
+                            <img src="imgs/messages.png" alt="" />
+                            <a class="nav-link" href="qna.html">Q & A</a>
+                        </li>
+                        <li class="nav-item gambar warna">
+                            <img src="imgs/task-square.png" alt="" />
+                            <a href="quiz.html" class="nav-link">KUIS</a>
+                        </li>
+                        <li class="nav-item">
+                            <div>
+                                <img src="imgs/Ellipse 14.png" alt="" />
+                            </div>
+                            <div>
+                                <span>Kaitlin Gregory</span>
+                                <span>Pelajar</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- akhir navbar -->
+
+        <div class="container kotak">
+            <div class="kiri">
+                <div class="atas">
+                    <div class="logo-back">
+                        <a href="detail-topik-pemahaman-enroll-ok.html" class="btn kembali">
+                            <img src="imgs/arrow-left.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="title">
+                        <span>Kuis Dasar Teknik Elektro</span>
+                    </div>
+                </div>
+                <div class="bawah">
+                    <div class="waktu">
+                        <div class="kiri">
+                            <img src="imgs/clock.png" alt="" />
+                        </div>
+                        <div class="kanan">
+                            <span class="jam">01 : 30 : 00</span>
+                        </div>
+                    </div>
+
+                    <h3>Soal 07 dan 08 dari 08 :</h3>
+
+                    <div class="soal">
+                        <p class="pertanyaan">7. Arus konvensional adalah ?</p>
+                        <ul>
+                            <li><input type="radio" name="soal1" id="jawaban1" /><label for="jawaban1">Arus yang arahnya negatif ke positif</label></li>
+                            <li><input type="radio" name="soal1" id="jawaban2" /><label for="jawaban2">Arah arus yang berlawanan dengan tegangan</label></li>
+                            <li><input type="radio" name="soal1" id="jawaban3" /><label for="jawaban3">Arus yang arahnya dari positif ke negatif</label></li>
+                            <li><input type="radio" name="soal1" id="jawaban4" /><label for="jawaban4">Arus yang dihasilkan oleh pembangkit</label></li>
+                            <li><input type="radio" name="soal1" id="jawaban5" /><label for="jawaban5">Arus yang tidak mengalir</label></li>
+                        </ul>
+                    </div>
+                    <div class="soal">
+                        <p class="pertanyaan">8. Hukum Ohm Berbunyi …. ?</p>
+                        <ul>
+                            <li class="d-flex">
+                                <input type="radio" name="soal2" id="jawaban6" /><label for="jawaban6"
+                                    >Kuat arus yang mengalir pada sebuah penghantar pada rangkaian tertutup berbanding lurus dengan hambatan penghantar Dan berbanding terbalik dengan potensialnya.</label
+                                >
+                            </li>
+                            <li class="d-flex">
+                                <input type="radio" name="soal2" id="jawaban7" /><label for="jawaban7"
+                                    >Kuat arus yang mengalir pada sebuah penghantar pada rangkaian tertutup berbanding lurus dengan beda potensial Dan berbanding terbalik dengan hambatan penghantar tersebut.</label
+                                >
+                            </li>
+                            <li class="d-flex"><input type="radio" name="soal2" id="jawaban8" /><label for="jawaban8">Arus listrik yang mengalir tergantung pada kekuatan dari sumber daya listrik yang dihasilkan oleh pembangkit.</label></li>
+                            <li class="d-flex">
+                                <input type="radio" name="soal2" id="jawaban9" /><label for="jawaban9"
+                                    >Arus listrik yang mengalir pada sebuah penghantar berbanding lurus dengan besarnya fluks magnetik antara dua titik dalam rangkaian</label
+                                >
+                            </li>
+                            <li class="d-flex"><input type="radio" name="soal2" id="jawaban10" /><label for="jawaban10">Kuat arus yang mengalir tergantung dari besarnya arus sumber berbanding terbalik dengan besarnya beban.</label></li>
+                        </ul>
+                    </div>
+                    <div class="next mb-5" style="justify-content: space-between">
+                        <a href="evaluasi-pemahaman-teori-4.html" class="btn next">
+                            <div class="kanan">
+                                <img src="imgs/arrow-circle-left.png" alt="" />
+                            </div>
+                            <div class="tengah">
+                                <span>Sebelumnya</span>
+                            </div>
+                        </a>
+                        <a onclick="konfirmasi()" class="btn next submit">
+                            <div class="tengah">
+                                <span>Submit</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/loadHtml.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script>
+            let bgKonfirmasi = document.querySelector(".bg-konfirmasi");
+
+            function move() {
+                window.location = "hasil-kuis.html";
+            }
+
+            function konfirmasi() {
+                bgKonfirmasi.style.display = "flex";
+            }
+
+            function tutup() {
+                bgKonfirmasi.style.display = "none";
+            }
+
+            function daftar() {
+                move();
+            }
+
+            // Mendapatkan elemen-elemen yang diperlukan dari DOM
+            const timerElement = document.querySelector("span.jam");
+            const startButton = document.getElementById("start");
+            const stopButton = document.getElementById("stop");
+            const resetButton = document.getElementById("reset");
+
+            // Inisialisasi variabel
+            let startTime;
+            let elapsedTime = 0;
+            let timerInterval;
+
+            // Fungsi untuk memformat waktu menjadi format hh:mm:ss
+            function formatTime(time) {
+                let hours = Math.floor(time / 3600000);
+                let minutes = Math.floor((time / 60000) % 60);
+                let seconds = Math.floor((time / 1000) % 60);
+
+                hours = hours.toString().padStart(2, "0");
+                minutes = minutes.toString().padStart(2, "0");
+                seconds = seconds.toString().padStart(2, "0");
+
+                return `${hours} : ${minutes} : ${seconds}`;
+            }
+
+            // Fungsi untuk memulai stopwatch
+            function startTimer() {
+                startTime = Date.now() - elapsedTime;
+                timerInterval = setInterval(function () {
+                    elapsedTime = Date.now() - startTime;
+                    timerElement.textContent = formatTime(elapsedTime);
+                }, 10);
+            }
+
+            // Fungsi untuk menghentikan stopwatch
+            function stopTimer() {
+                clearInterval(timerInterval);
+            }
+
+            // Fungsi untuk mereset stopwatch
+            function resetTimer() {
+                clearInterval(timerInterval);
+                elapsedTime = 0;
+                timerElement.textContent = formatTime(elapsedTime);
+            }
+
+            startTimer();
+        </script>
+    </body>
+</html>
